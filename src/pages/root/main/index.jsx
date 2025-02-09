@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { DateField } from "@mui/x-date-pickers"
+import { DatePicker } from "@mui/x-date-pickers"
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider"
 import { Button } from "@mui/material"
@@ -38,7 +38,7 @@ const Main = () => {
           <div className="known-age-component">
             <div className="birth-date-input">
               <label htmlFor="birth-date">Enter Date of Birth</label>
-              <DateField
+              <DatePicker
                 name="birth-date"
                 onChange={handleInputDate}
                 slotProps={{

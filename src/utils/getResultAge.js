@@ -13,7 +13,7 @@ const getResultAge = (millisecond) => {
   const information = [
     {
       text_information: `You have lived for ${number_of_days} days since you were born in this world, may you always be healthy and happy!`,
-      time_information: `${day} Days ${month} Months ${year} Years`,
+      time_information: `${year} Years ${month} Months ${day} Days`,
     },
   ];
 
