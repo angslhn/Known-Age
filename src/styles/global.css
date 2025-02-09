@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xxs: 20rem;
+    --breakpoint-xs: 22.5rem;
+    --breakpoint-s: 24.375rem;
+    --font-montserrat: Montserrat, serif;
+}
+
+* {
+    @apply font-montserrat font-semibold text-slate-300;
+}
+
+body {
+    @apply bg-[rgb(3,7,18)] h-screen w-screen;
+}
+
+#known-age-app {
+    @apply h-full w-full hidden xxs:flex flex-col justify-between items-center;
+}
+
+header {
+    @apply xxs:mt-3 sm:mt-0 sm:h-[25%] w-full flex flex-col justify-center items-center gap-2 text-center;
+}
+
+.known-age-title {
+    @apply xxs:text-3xl md:text-4xl font-extrabold;
+}
+
+.known-age-description {
+    @apply xxs:w-[90%] sm:w-[85%] lg:w-[60%] xxs:text-[0.9rem] sm:text-[1rem] text-justify hyphens-auto leading-4.5;
+}
+
+main {
+    @apply w-full flex justify-center items-center grow;
+}
+
+.known-age-wrapper {
+    @apply xxs:h-[75%] sm:h-[60%] xxs:w-[90%] sm:w-[65%] md:w-[55%] lg:w-[45%] flex flex-col justify-center border border-slate-700 items-center bg-[rgb(26,29,40)] rounded-xl shadow;
+}
+
+.known-age-component {
+    @apply grow w-full flex flex-col justify-center items-center;
+}
+
+.birth-date-input {
+    @apply w-[90%] grow xxs:flex-wrap xs:flex-wrap xs:flex-col flex justify-evenly items-center;
+}
+
+.MuiInputBase-input {
+    @apply xxs:w-[55%] md:w-[35%];
+}
+
+.known-age-button {
+    @apply flex grow justify-center items-center
+}
+
+.known-age-result {
+    @apply h-[50%] w-full flex flex-col justify-evenly items-center border-t border-t-slate-700;
+}
+
+.known-age-result-invalid {
+    @apply w-[90%] hyphens-auto text-center xxs:text-[0.9rem] sm:text-[1rem];
+}
+
+.known-age-result-information {
+    @apply w-[80%] hyphens-auto text-center xxs:text-[0.9rem] sm:text-[1rem];
+}
+
+.known-age-result-time-information {
+    @apply w-[80%] hyphens-auto text-center text-2xl font-extrabold;
+}
+
+footer {
+    @apply h-[6%] w-full flex justify-center items-center text-center;
+}
+
+.footer-text-creator {
+    @apply xxs:text-[0.7rem] sm:text-[0.85rem] font-extrabold;
+}
